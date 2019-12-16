@@ -1,0 +1,92 @@
+.square1, .square2, .square3, .square4 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transition: border .5s, height .5s, width .5s;
+}
+.square1:hover, .square2:hover, .square3:hover, .square4:hover {
+    border: 4px solid white;    
+    height: 92px;
+    width: 92px;
+}
+.square1 { 
+    background-color: lightcoral;
+    top: 0;
+    left: 0;
+    animation-name: sq1;
+    animation-duration: 2s;
+    animation: sq1 4s forwards;
+}
+.square2 {   
+    background-color: lightblue;
+    top: 0;
+    right: 0;
+    animation-name: sq2;
+    animation-duration: 2s;
+    animation: sq2 4s forwards;}
+.square3 { 
+    background-color: lightgreen;
+    bottom: 0;
+    left: 0;
+    animation-name: sq3;
+    animation-duration: 2s;
+    animation: sq3 4s forwards;}
+.square4 {
+    background-color: lightgoldenrodyellow;
+    bottom: 0;
+    right: 0;
+    animation-name: sq4;
+    animation-duration: 2s;
+    animation: sq4 4s forwards;}
+@keyframes sq1 {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: lightcoral;
+    }
+    100% {
+        top: 50%;
+        left: 50%;
+        background-color: black;
+        border-radius: 0 0 100% 0;
+    }
+}
+@keyframes sq2 {
+    0% {
+        top: 0;
+        right: 0;
+        background-color: lightblue;
+    }
+    100% {
+        top: 50%;
+        right: 50%;
+        background-color: black;
+        border-radius: 0 0 0 100%;
+    }
+}
+@keyframes sq3 {
+    0% {
+        bottom: 0;
+        left: 0;
+        background-color: lightgreen;
+    }
+    100% {
+        bottom: 50%;
+        left: 50%;
+        background-color: black;
+        border-radius: 0 100% 0 0;
+    }
+}
+@keyframes sq4 {
+    0% {
+        bottom: 0;
+        right: 0;
+        background-color: lightgoldenrodyellow;
+    }
+    100% {
+        bottom: 50%;
+        right: 50%;
+        background-color: black;
+        border-radius: 100% 0 0 0;
+    }
+}
