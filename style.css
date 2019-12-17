@@ -13,30 +13,22 @@
     background-color: lightcoral;
     top: 0;
     left: 0;
-    animation-name: sq1;
-    animation-duration: 2s;
     animation: sq1 4s forwards;
 }
 .square2 {   
     background-color: lightblue;
     top: 0;
     right: 0;
-    animation-name: sq2;
-    animation-duration: 2s;
     animation: sq2 4s forwards;}
 .square3 { 
     background-color: lightgreen;
     bottom: 0;
     left: 0;
-    animation-name: sq3;
-    animation-duration: 2s;
     animation: sq3 4s forwards;}
 .square4 {
     background-color: lightgoldenrodyellow;
     bottom: 0;
     right: 0;
-    animation-name: sq4;
-    animation-duration: 2s;
     animation: sq4 4s forwards;}
 @keyframes sq1 {
     0% {
